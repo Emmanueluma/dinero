@@ -11,7 +11,7 @@ import Article from '../article/Article'
 
 const Home = ({ article, setArticle }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isOpened, setIsOpended] = useState(false);
+  const [isOpened, setIsOpended] = useState(true);
 
   const togglePlayPause = () => {
     const audioElement = document.getElementById('myAudio');
