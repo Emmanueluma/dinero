@@ -1,8 +1,16 @@
 import React from 'react'
+import video from '../../../asset/backvideo.mp4'
 
 const Original = () => {
   return (
     <div className='chamber'>
+      <div className="video">
+        <video autoPlay muted loop id="video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="content">
       <h1>4.0 ORDINALS</h1>
         <article>    
             <a href="http://" target="_blank" rel="noopener noreferrer">4.1 Bitcoin Whitepaper</a>
@@ -24,6 +32,7 @@ const Original = () => {
             <a href="http://" target="_blank" rel="noopener noreferrer">4.17 Ordinal Rarity</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">4.18 Special Sats</a>
         </article>
+    </div>
     </div>
   )
 }

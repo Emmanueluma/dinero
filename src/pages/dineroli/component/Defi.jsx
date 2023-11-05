@@ -1,8 +1,16 @@
 import React from 'react'
+import video from '../../../asset/backvideo.mp4'
 
 const Defi = () => {
   return (
     <div className='chamber'>
+      <div className="video">
+        <video autoPlay muted loop id="video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="content">
       <h1>2.0 DEFI</h1>
         <article>
             <a href="http://" target="_blank" rel="noopener noreferrer">2.1 What is DeF</a>
@@ -29,6 +37,7 @@ const Defi = () => {
             <a href="http://" target="_blank" rel="noopener noreferrer">2.22 Airdrop hunting</a>
         </article>
 
+    </div>
     </div>
   )
 }

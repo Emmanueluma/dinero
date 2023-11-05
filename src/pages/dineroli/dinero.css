@@ -15,20 +15,44 @@ section.dineroli .back{
     font-weight: 6000;
 }
 .chamber{
-    padding: 1rem;
+    position: relative;
+}
+.chamber .video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.chamber .video #video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.chamber .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
 }
 .chamber h1{
     color: var(--main-color);
+    z-index: 1;
 }
 .chamber article{
     padding-left: 2rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .chamber article a{
-    color: #ffffffb4;
+    color: #ffffffee;
+    font-size: 1.1rem;
+}
+.chamber article a:hover{
+    text-decoration: underline;
 }
 @media screen and (max-width: 470px) {
     .chamber h1{

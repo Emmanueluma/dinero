@@ -1,11 +1,17 @@
 import React from 'react'
-import Dinav from './Dinav'
+import video from '../../../asset/backvideo.mp4'
 
 const Nft = () => {
   return (
     <div className='chamber'>
-      <Dinav />
-      <h1>3.0 NFT BASICS</h1>
+      <div className="video">
+        <video autoPlay muted loop id="video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className="content">
+        <h1>3.0 NFT BASICS</h1>
         <article>
             <a href="https://twitter.com/feyi_x/status/1487451682443341830?s=46" target="_blank" rel="noopener noreferrer">3.1 What Are NFTs?</a>
             <a href="https://opensea.io/learn/what-is-minting-nft" target="_blank" rel="noopener noreferrer">3.2 What Is Minting And How Do I Mint An NFT?</a>
@@ -21,6 +27,7 @@ const Nft = () => {
             <a href="https://www.binance.com/en/blog/nft/a-guide-to-nft-rarity-9071635817709795895" target="_blank" rel="noopener noreferrer">3.12 How To Check NFT Rarity</a>
             <a href="https://cointelegraph.com/explained/what-are-nft-royalties-and-how-do-they-work" target="_blank" rel="noopener noreferrer">3.13 Royalties In NFT </a>
         </article>
+      </div>
 
     </div>
   )
