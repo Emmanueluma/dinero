@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Mainapp from "./Mainapp";
+import {Routes, Route} from 'react-router-dom'
+import Dineroli from "./pages/dineroli/Dineroli";
+import Form from "./pages/form/Form";
+import Crypto from "./pages/dineroli/component/Crypto";
+import Defi from "./pages/dineroli/component/Defi";
+import Nft from "./pages/dineroli/component/Nft";
+import Original from "./pages/dineroli/component/Original";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+          <Route path='/' element={<Mainapp />}/>
+          <Route path='/dineroli' element={<Dineroli/>} />
+          <Route path='/dineroli/cryptobasic' element={<Crypto />}/>
+          <Route path='/dineroli/defi' element={<Defi />}/>
+          <Route path='/dineroli/nftbasic' element={<Nft />}/>
+          <Route path='/dineroli/originals' element={<Original />}/>
+          <Route path='/form' element={<Form/>}/>
+      </Routes>
   );
 }
 

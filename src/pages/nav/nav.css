@@ -1,0 +1,129 @@
+nav{
+    padding: 2rem;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 9999999999999;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: nav 1s ease-in-out .7s forwards ;
+}
+@keyframes nav {
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+nav div.img{
+    width: 150px;
+    height: 70px;
+    position: relative;
+    top: 0px;
+}
+nav div.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+nav ul{
+    padding: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a{
+    color: #000;
+}
+nav ul li a.active{
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #000;
+    color: var(--main-color);
+}
+nav ul li a:hover{
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #0000006c;
+    color: var(--main-color);
+}
+nav h1{
+    font-size: 1rem;
+}
+nav .menu{
+    display: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: .8rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+nav .phone--container{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    nav{
+        justify-content: center;
+        align-items: center;
+    }
+    nav div.img{
+        display: none;
+    }
+    .linkform{
+        display: none;
+    }
+}
+@media screen and (max-width: 544px) {
+    nav div.img{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav .phone--container.active{
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+    }
+    nav .phone--container.active ul.phone.active {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #000;
+        flex-direction: column;
+    }
+    nav .phone--container.active ul.phone.active a{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    nav .phone--container.active ul.phone.active a.active{
+        color: var(--main-color);
+    }
+}

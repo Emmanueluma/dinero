@@ -1,0 +1,228 @@
+header{
+    height: 100vh;
+    background-image: url('../../asset/homepage.png');
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 70px;
+}
+header::after{
+    content: '';
+    background-color: #0000001e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+header .flex--container{
+    height: calc(100% - 50px);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    opacity: 0;
+    animation: container 1s ease-in-out .7s forwards;
+}
+@keyframes container {
+    100%{
+        opacity: 1;
+    }
+}
+header .flex--container .text{
+    text-align: center;
+}
+header .flex--container .text p.p{
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: inline;
+    color: #fff;
+    border: 2px solid var(--main-color);
+}
+header .flex--container .text h1{
+    font-size: 2rem;
+    opacity: 0;
+    animation: header 1s ease-in-out .7s forwards ;
+    margin-bottom: 1rem;
+}
+@keyframes header {
+    100%{
+        font-size: rem;
+        opacity: 1;
+    }
+}
+header .flex--container .text p.pp{
+    padding: 1rem;
+    display: inline;
+    background-color: #000;
+    border-radius: 10px;
+}
+header .flex--container div{
+    width: auto;
+}
+header .flex--container div section.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: down 1s ease-in-out .4s forwards;
+    transition: all .3s;
+}
+@keyframes down {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+header .flex--container section.controller{
+    background-color: #464545;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 30px;
+    bottom: 90px;
+    border-radius: 5px;
+    z-index: 100;
+}
+header .flex--container section.controller.active{
+    width: 200px;
+}
+header .flex--container section.controller div.contain{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller div.contain div{
+    height: 100%;
+}
+header .flex--container section.controller div.contain .minmax{
+    background-color: #464545;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 0 0 4px #ffffff4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller div.contain .player{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+header .flex--container section.controller div.contain .player span{
+    width: 3px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+header .flex--container section.controller div.contain .player.a span{
+    background-color: #fff;
+    animation: size 1s ease-in-out .2s infinite alternate;
+}
+header .flex--container section.controller div.contain .player.a span.e1{
+    animation-delay: .6s;
+}
+header .flex--container section.controller div.contain .player.a span.e2{
+    animation-delay: .9s;
+}
+header .flex--container section.controller div.contain .player.a span.e3{
+    animation-delay: .8s;
+}
+header .flex--container section.controller div.contain .player.a span.e4{
+    animation-delay: 1.3s;
+}
+header .flex--container section.controller div.contain .player.a span.e5{
+    animation-delay: 1.7s;
+}
+@keyframes size {
+    100%{
+        height: 20px;
+    }
+}
+header .flex--container section.controller div.contain .name{
+    display: none;
+}
+header .flex--container section.controller.active div.contain .name{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+header .flex--container section.controller.active div.contain .name h4{
+    font-size: .9rem;
+}
+header .flex--container section.controller.active div.contain .name p{
+    font-size: .7rem;
+}
+header .flex--container section.controller div.contain .playbtn{
+    display: none;
+}
+header .flex--container section.controller.active div.contain .playbtn{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .flex--container section.controller.active div.contain .playbtn .playStop{
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 922px) {
+    header .flex--container .text h1{
+        font-size: 2rem;
+        opacity: 0;
+        animation: header 1s ease-in-out .7s forwards ;
+    }
+    @keyframes header {
+        100%{
+            font-size: 5rem;
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 603px) {
+    header .flex--container .text h1{
+        font-size: 2rem;
+        opacity: 0;
+        animation: header 1s ease-in-out .7s forwards ;
+    }
+    @keyframes header {
+        100%{
+            font-size: 4rem;
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 569px) {
+    header .flex--container .text p.pp{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 454px) {
+    header .flex--container .text p.pp{
+        display: block;
+        width: 80%;
+        font-size: .7rem;
+        margin: 0 auto;
+    }
+}

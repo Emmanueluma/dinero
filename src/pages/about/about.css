@@ -1,0 +1,36 @@
+section.about{
+    clip-path: polygon(0 4%, 100% 0, 100% 94%, 0% 100%);
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+section.about .header-h1 span{
+    text-transform: uppercase;
+}
+section.about section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.about section .flex--items {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(50px);
+    opacity: 0;
+}
+section.about section .flex--items.inter{
+    transform: translateY(0px);
+    opacity: 1;
+}
+section.about section .flex--items div.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 1rem;
+}

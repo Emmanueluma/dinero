@@ -1,0 +1,157 @@
+section.services{
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+section.services h1 span{
+    text-transform: lowercase;
+}
+section.services .flex-continer{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 13px;
+    grid-template-rows: repeat(5, 300px);
+}
+section.services .flex-continer article.flex-item{
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+section.services .flex-continer article.flex-item h3{
+    font-size: 1.4rem;
+}
+section.services .flex-continer article.flex-item.inter{
+    opacity: 1;
+}
+section.services .flex-continer article.flex-item .icon{
+    position: absolute;
+    color: var(--main-color)
+}
+section.services .flex-continer article.flex-item.one{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.one.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.two{
+    transform: translateX(-50px);
+}
+section.services .flex-continer article.flex-item.two.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.three{
+    transform: translateX(50px);
+}
+section.services .flex-continer article.flex-item.three.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.four{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.four.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.five{
+    transform: translateX(-50px);
+}
+section.services .flex-continer article.flex-item.five.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.six{
+    transform: translateX(50px);
+}
+section.services .flex-continer article.flex-item.six.inter{
+    transform: translateX(0px);
+}
+section.services .flex-continer article.flex-item.seven{
+    grid-column: 1 / -1;
+    transform: translateY(50px);
+}
+section.services .flex-continer article.flex-item.seven.inter{
+    transform: translateY(0px);
+}
+section.services .flex-continer article.flex-item.one .icon{
+    bottom: -50px;
+    right: 0;
+    font-size: 20rem;
+}
+@media screen and (max-width: 939px) {
+    section.services .flex-continer article.flex-item.one .icon{
+        font-size: 7rem;
+        bottom: 0;
+    }
+}
+section.services .flex-continer article.flex-item.two .icon{
+    position: relative;
+    font-size: 4rem;
+}
+section.services .flex-continer article.flex-item.three .icon{
+    position: relative;
+    font-size: 4rem;
+}
+section.services .flex-continer article.flex-item.four .icon{
+    bottom: -50px;
+    left: 0;
+    font-size: 20rem;
+}
+@media screen and (max-width: 939px) {
+    section.services .flex-continer article.flex-item.four .icon{
+        font-size: 7rem;
+        bottom: 0;
+    }
+}
+section.services .flex-continer article.flex-item.five .icon{
+    position: relative;
+    font-size: 4rem;
+}
+section.services .flex-continer article.flex-item.six .icon{
+    position: relative;
+    font-size: 4rem;
+}
+section.services .flex-continer article.flex-item.seven .icon{
+    top: 50px;
+    right: 20px;
+    font-size: 10rem;
+}
+@media screen and (max-width: 939px) {
+    section.services .flex-continer article.flex-item.seven .icon{
+        font-size: 7rem;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 527px) {
+    section.services .flex-continer article.flex-item h3{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 462px) {
+    section.services .flex-continer article.flex-item.seven .icon{
+        top: 40px;
+    }
+}
+@media screen and (max-width: 343px) {
+    section.services .flex-continer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section.services .flex-continer article{
+        width: 100%;
+        height: 300px;
+    }
+}
+
