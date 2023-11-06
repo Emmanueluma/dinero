@@ -35,6 +35,7 @@ section.dineroli .back{
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    text-align: center;
 }
 .chamber h1{
     color: var(--main-color);

@@ -13,7 +13,7 @@ const Defi = () => {
       <div className="content">
       <h1>2.0 DEFI</h1>
         <article>
-            <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="_blank" rel="noopener noreferrer">2.1 What is DeF</a>
+            <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="_blank" rel="noopener noreferrer">2.1 What is DeFi</a>
             <a href="https://www.theblock.co/learn/245712/what-are-the-advantages-and-disadvantages-of-defi" target="_blank" rel="noopener noreferrer">2.2 Advantages and disadvantages of DeFi</a>
             <a href="https://youtu.be/nQ3BZVIMjWk?si=_shko4WCxl5GnZan" target="_blank" rel="noopener noreferrer">2.3 Creating and funding your first self custody web3 wallet</a>
             <a href="https://www.coindesk.com/learn/what-are-blockchain-bridges-and-how-do-they-work/" target="_blank" rel="noopener noreferrer">2.4 Transferring funds, bridging, trading and operating on chain</a>
