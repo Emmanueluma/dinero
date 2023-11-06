@@ -1,12 +1,12 @@
 import React from 'react'
-import video from '../../../asset/backvideo.mp4'
+/* import video from '../../../asset/backvideo.mp4' */
 
 const Original = () => {
   return (
     <div className='chamber'>
       <div className="video">
         <video autoPlay muted loop id="video">
-          <source src={video} type="video/mp4" />
+          {/* <source src={video} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
       </div>

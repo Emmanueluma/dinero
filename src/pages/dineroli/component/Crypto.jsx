@@ -1,13 +1,13 @@
 import React from 'react'
 import '../dinero.css'
-import video from '../../../asset/backvideo.mp4'
+/* import video from '../../../asset/backvideo.mp4' */
 
 const Crypto = () => {
   return (
     <div className='chamber'>
       <div className="video">
         <video autoPlay muted loop id="video">
-          <source src={video} type="video/mp4" />
+          {/* <source src={video} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
       </div>
