@@ -8,7 +8,7 @@ const Article = ({ article, setArticle}) => {
   return (
     <section className={`article ${article && "active"}`}>
         <button onClick={toggleClose}>< IoMdClose /></button>
-        <h2>DINERO: Empowering Web3 Explorers Through Synergy, Education, and Connection</h2>
+        <h2>DINERO: Empowering Web3 Explorers Through Synergy of Education, and Connection</h2>
         <p>
             In the ever-evolving landscape of Web3, where innovative technologies and digital currencies reshape the way we interact with the virtual world, communities play a pivotal role. Among these, DINERO stands out as a beacon of inspiration and collaboration, uniting ardent builders, alphas, and gamers in a shared mission. At its core, DINERO is not merely a community; it is a synergy of diverse talents, a sanctuary for NFT enthusiasts and Web3 explorers, and a powerhouse dedicated to empowering, educating, and connecting its members.
         </p>
