@@ -25,9 +25,9 @@ const Nav = () => {
             <ul className="desktop">
                 <li><a href="#" className={nav === '#' ? 'active' : ''} onClick={() => setNav('#')}>home</a></li>
                 <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => setNav('#about')}>about</a></li>
-                <li><a href="#services" className={nav === '#services' ? 'active' : ''} onClick={() => setNav('#services')}>Features</a></li>
+                <li><a href="#feature" className={nav === '#feature' ? 'active' : ''} onClick={() => setNav('#feature')}>Features</a></li>
                 <li><Link to='dineroli'>Library</Link></li>
-                <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => setNav('#question')}>join</a></li>
+                <li><a href="#joinus" className={nav === '#joinus' ? 'active' : ''} onClick={() => setNav('#joinus')}>join</a></li>
                 <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
             </ul>
             <Link className="linkform" to='/form'>join <WiDirectionUpRight className="icon" /></Link>
@@ -36,9 +36,9 @@ const Nav = () => {
                 <ul className={`phone ${displayNav && 'active'}`}>
                     <li><a href="#" className={nav === '#' ? 'active' : ''} onClick={() => path('#')}>home</a></li>
                     <li><a href="#about" className={nav === '#about' ? 'active' : ''} onClick={() => path('#about')}>about</a></li>
-                    <li><a href="#services" className={nav === '#services' ? 'active' : ''} onClick={() => path('#services')}>Features</a></li>
+                    <li><a href="#feature" className={nav === '#sfeature' ? 'active' : ''} onClick={() => path('#feature')}>Features</a></li>
                     <li><Link to='dineroli'>Library</Link></li>
-                    <li><a href="#question" className={nav === '#question' ? 'active' : ''} onClick={() => path('#question')}>join</a></li>
+                    <li><a href="#joinus" className={nav === '#joinus' ? 'active' : ''} onClick={() => path('#joinus')}>join</a></li>
                     <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => path('#partnerships')}>partnerships</a></li>
                 </ul>
             </div>

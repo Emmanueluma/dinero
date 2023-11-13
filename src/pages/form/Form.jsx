@@ -4,7 +4,6 @@ import './form.css'
 import img from '../../asset/Dinero\ white.JPEG.jpg' 
 import {BiLoaderAlt} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
-import {useNavigate} from 'react-router-dom'
 
 const Form = ({setSent}) => {
 
@@ -26,33 +25,14 @@ const Form = ({setSent}) => {
         }
     })
  } 
- const nav = useNavigate();
   const sendEmail = (e) => {
     e.preventDefault();
-    
-    emailjs.sendForm('service_ot2o7de', 'template_xkzd8rz', form.current, 'n1_R7vM9hWLeE8Pna')
+    console.log(formdata)
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then((result) => {
           console.log(result.text);
-          setLoader(prev => !prev);
-          setformdata({
-            twitter : '',
-            discord : '',
-            level : '',
-            how : '',
-            why : '',
-            message : ''
-          })
       }, (error) => {
           console.log(error.text);
-          setLoader(prev => !prev);
-          setformdata({
-            twitter : '',
-            discord : '',
-            level : '',
-            how : '',
-            why : '',
-            message : ''
-          })
       });
   };
 
@@ -70,10 +50,11 @@ const Form = ({setSent}) => {
                 <input type="text" onChange={handleChange} className='st' value={formdata.how} name='how' placeholder='How did you get to know about Dinero:' required/>
                 <input type="text" onChange={handleChange} className='st' value={formdata.why} name='why' placeholder='Why do you want be a part of Dinero:' required/>
                 <textarea className='st' onChange={handleChange} value={formdata.message} name='message' placeholder="How will you support Dinero's growth?" required/>
-            <button onClick={() => setLoader(prev => !prev)}>{loader === false ? 'submit' : <BiLoaderAlt className='loader' />}</button>
+            <button>submit</button>
         </form>
     </section>
   )
 }
 
 export default Form
+/* {loader === false ? 'submit' : <BiLoaderAlt className='loader' />} */

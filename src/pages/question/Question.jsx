@@ -38,7 +38,7 @@ const Question = () => {
 },[])
 
   return (
-    <section id="question" className="maxWidth question">
+    <section id="joinus" className="maxWidth question">
     <h1 className='header-h1'>join <span>community</span></h1>
         <div className="flex--container">
             <div ref={qRef} className={`flex--items one ${qVisible && "active"}`}>

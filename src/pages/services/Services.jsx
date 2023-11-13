@@ -90,7 +90,7 @@ const Services = () => {
 
 
   return (
-    <section className="maxWidth services" id="services">
+    <section className="maxWidth services" id="feature">
         <h1 className='header-h1'>Features</h1>
         <div  className="flex-continer">
             <article ref={sRef} className={`flex-item one ${sVisible && "inter"}`}>
@@ -115,7 +115,7 @@ const Services = () => {
             </article>
             <article ref={s5Ref} className={`flex-item six ${s5Visible && "inter"}`}>
                 <MdGamepad className='icon' />
-                <h3>Events and Games</h3>
+                <h3>web3 games</h3>
             </article>
             <article ref={s6Ref} className={`flex-item seven ${s6Visible && "inter"}`}>
                 <LiaAccessibleIcon className='icon' />

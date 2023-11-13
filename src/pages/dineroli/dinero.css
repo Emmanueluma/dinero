@@ -46,6 +46,7 @@ section.dineroli .back{
 .chamber h1{
     color: var(--main-color);
     z-index: 1;
+    margin-bottom: 1rem;
 }
 .chamber article{
     padding-left: 2rem;
