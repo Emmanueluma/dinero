@@ -19,7 +19,7 @@ const Dineroli = () => {
         </Link>
         <Link  to='/dineroli/defi' className='link two'>
         <GiWhiteBook className='icon'/>
-        <h3>defi</h3>
+        <h3>DEFI</h3>
         </Link>
         <Link to='/dineroli/nftbasic' className='link three'>
           <RiNftFill className='icon'/>
@@ -27,7 +27,7 @@ const Dineroli = () => {
         </Link>
         <Link to='/dineroli/originals' className='link four'>
           <BsCurrencyBitcoin className='icon'/>
-          <h3>orginals</h3>
+          <h3>ORDINALS</h3>
         </Link>
       </section>
       <Outlet />
