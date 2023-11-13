@@ -13,16 +13,16 @@ const Dineroli = () => {
         {/* <Link className='back' to='/'><IoIosArrowBack /> back</Link> */}
         
       <section className="massive--link">
-        <Link to='/dineroli/cryptobasic' className='link'>
+        <Link to='/dineroli/cryptobasic' className='link one'>
           <img className="img--fill" src={img1} alt="imageOne" />
         </Link>
-        <Link  to='/dineroli/defi' className='link'>
+        <Link  to='/dineroli/defi' className='link two'>
           <img className="img--fill" src={img2} alt="imageTwo" />
         </Link>
-        <Link to='/dineroli/nftbasic' className='link'>
+        <Link to='/dineroli/nftbasic' className='link three'>
           <img className="img--fill" src={img3} alt="imageThree" />
         </Link>
-        <Link to='/dineroli/originals' className='link'>
+        <Link to='/dineroli/originals' className='link four'>
           <img className="img--fill" src={img4} alt="imageFour" />
         </Link>
       </section>
