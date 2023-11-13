@@ -50,7 +50,7 @@ const Form = ({setSent}) => {
                 <input type="text" onChange={handleChange} className='st' value={formdata.how} name='how' placeholder='How did you get to know about Dinero:' required/>
                 <input type="text" onChange={handleChange} className='st' value={formdata.why} name='why' placeholder='Why do you want be a part of Dinero:' required/>
                 <textarea className='st' onChange={handleChange} value={formdata.message} name='message' placeholder="How will you support Dinero's growth?" required/>
-            <button>submit</button>
+            <button>coming soon</button>
         </form>
     </section>
   )
