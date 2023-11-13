@@ -1,6 +1,6 @@
 import './dinero.css'
 import {Link} from 'react-router-dom'
-import {MdCastForEducation} from 'react-icons/md'
+import {GiWhiteBook} from 'react-icons/gi'
 import {FaEthereum} from 'react-icons/fa'
 import {RiNftFill} from 'react-icons/ri'
 import {BsCurrencyBitcoin} from 'react-icons/bs'
@@ -13,11 +13,12 @@ const Dineroli = () => {
         
       <section className="massive--link">
         <Link to='/dineroli/cryptobasic' className='link one'>
-          <MdCastForEducation className='icon'/>
+          <FaEthereum className='icon' />
+          
           <h3>crypto basic</h3>
         </Link>
         <Link  to='/dineroli/defi' className='link two'>
-        <FaEthereum className='icon' />
+        <GiWhiteBook className='icon'/>
         <h3>defi</h3>
         </Link>
         <Link to='/dineroli/nftbasic' className='link three'>
