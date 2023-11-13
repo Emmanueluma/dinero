@@ -1,11 +1,10 @@
 import './dinero.css'
 import {Link} from 'react-router-dom'
-/* import {IoIosArrowBack} from 'react-icons/io' */
+import {MdCastForEducation} from 'react-icons/md'
+import {FaEthereum} from 'react-icons/fa'
+import {RiNftFill} from 'react-icons/ri'
+import {BsCurrencyBitcoin} from 'react-icons/bs'
 import { Outlet } from 'react-router-dom'
-import img1 from '../../../src/asset/d1.jpg'
-import img2 from '../../../src/asset/d2.jpg'
-import img3 from '../../../src/asset/d3.jpg'
-import img4 from '../../../src/asset/d4.jpg'
 
 const Dineroli = () => {
   return (
@@ -14,16 +13,20 @@ const Dineroli = () => {
         
       <section className="massive--link">
         <Link to='/dineroli/cryptobasic' className='link one'>
-          <img className="img--fill" src={img1} alt="imageOne" />
+          <MdCastForEducation className='icon'/>
+          <h3>crypto basic</h3>
         </Link>
         <Link  to='/dineroli/defi' className='link two'>
-          <img className="img--fill" src={img2} alt="imageTwo" />
+        <FaEthereum className='icon' />
+        <h3>defi</h3>
         </Link>
         <Link to='/dineroli/nftbasic' className='link three'>
-          <img className="img--fill" src={img3} alt="imageThree" />
+          <RiNftFill className='icon'/>
+          <h3>nft basic</h3>
         </Link>
         <Link to='/dineroli/originals' className='link four'>
-          <img className="img--fill" src={img4} alt="imageFour" />
+          <BsCurrencyBitcoin className='icon'/>
+          <h3>originals</h3>
         </Link>
       </section>
       <Outlet />
