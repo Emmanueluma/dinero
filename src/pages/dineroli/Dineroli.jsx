@@ -27,7 +27,7 @@ const Dineroli = () => {
         </Link>
         <Link to='/dineroli/originals' className='link four'>
           <BsCurrencyBitcoin className='icon'/>
-          <h3>originals</h3>
+          <h3>orginals</h3>
         </Link>
       </section>
       <Outlet />
