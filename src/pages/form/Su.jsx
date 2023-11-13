@@ -7,8 +7,9 @@ const su = () => {
     return (
         <section className="mess">
             <img src={img} alt="img" />
+            <p>Thanks for Applying </p>
             <p>all successful applicants will be contacted shortly</p>
-            <p>may the odds be in your favour</p>
+            <p>Don’t forget to keep your DM’s opened 🦾</p>
         </section>
     )
 }
