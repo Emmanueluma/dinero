@@ -4,9 +4,10 @@ import './form.css'
 import img from '../../asset/Dinero\ white.JPEG.jpg' 
 import {BiLoaderAlt} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 const Form = ({setSent}) => {
-
+    const nav = useNavigate();
   const form = useRef();
   const [formdata, setformdata] = useState({
     twitter : '',
@@ -27,12 +28,13 @@ const Form = ({setSent}) => {
  } 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formdata)
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_0g5b0rf', 'template_w5q31mi', form.current, 'n1_R7vM9hWLeE8Pna')
       .then((result) => {
           console.log(result.text);
+          nav('/')
       }, (error) => {
           console.log(error.text);
+          nav('/')
       });
   };
 
@@ -50,7 +52,7 @@ const Form = ({setSent}) => {
                 <input type="text" onChange={handleChange} className='st' value={formdata.how} name='how' placeholder='How did you get to know about Dinero:' required/>
                 <input type="text" onChange={handleChange} className='st' value={formdata.why} name='why' placeholder='Why do you want be a part of Dinero:' required/>
                 <textarea className='st' onChange={handleChange} value={formdata.message} name='message' placeholder="How will you support Dinero's growth?" required/>
-            <button>coming soon</button>
+            <button>submit</button>
         </form>
     </section>
   )
