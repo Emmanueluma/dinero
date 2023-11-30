@@ -1,7 +1,6 @@
 import Mainapp from "./Mainapp";
 import {Routes, Route} from 'react-router-dom'
 import Dineroli from "./pages/dineroli/Dineroli";
-import Form from "./pages/form/Form";
 import Crypto from "./pages/dineroli/component/Crypto";
 import Defi from "./pages/dineroli/component/Defi";
 import Nft from "./pages/dineroli/component/Nft";
