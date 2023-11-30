@@ -14,7 +14,6 @@ function App() {
           <Route path='/dineroli/defi' element={<Defi />}/>
           <Route path='/dineroli/nftbasic' element={<Nft />}/>
           <Route path='/dineroli/originals' element={<Original />}/>
-          <Route path='/form' element={<Form/>}/>
       </Routes>
   );
 }
