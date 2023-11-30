@@ -30,7 +30,7 @@ const Nav = () => {
                 <li><a href="#joinus" className={nav === '#joinus' ? 'active' : ''} onClick={() => setNav('#joinus')}>join</a></li>
                 <li><a href="#partnerships" className={nav === '#partnerships' ? 'active' : ''} onClick={() => setNav('#partnerships')}>partnerships</a></li>
             </ul>
-            <Link className="linkform" to='/form'>join <WiDirectionUpRight className="icon" /></Link>
+            <a href="https://tally.so/r/merNgE" className="linkform" target="_blank" rel="noopener noreferrer">join <WiDirectionUpRight className="icon" /></a>
             <button onClick={toggleNav} className="menu">{ displayNav == false ? <BiMenuAltRight />  : <IoMdClose /> } </button>
             <div className={`phone--container ${displayNav && 'active'}`} >
                 <ul className={`phone ${displayNav && 'active'}`}>

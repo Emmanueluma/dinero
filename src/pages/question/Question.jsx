@@ -47,7 +47,8 @@ const Question = () => {
             <div ref={q1Ref}
             className={`flex--items two ${q1Visible && "active"}`}>
               <h3>Fill the form below to join us.</h3>
-              <Link to='/form' className='btn'>start</Link>
+              {/* <Link to='/form' className='btn'></Link> */}
+              <a href="https://tally.so/r/merNgE" className='btn' target="_blank" rel="noopener noreferrer">start</a>
             </div> 
         </div>
     </section>
